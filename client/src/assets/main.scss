@@ -1,0 +1,134 @@
+/* 全局样式 */
+
+/* 重置样式 */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+/* 常用辅助类 */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+/* 页面容器 */
+.page-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #303133;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebeef5;
+}
+
+/* 表格工具栏 */
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* 状态标签 */
+.status-tag {
+  &.success {
+    background-color: #f0f9eb;
+    color: #67c23a;
+    border: 1px solid #e1f3d8;
+  }
+  
+  &.warning {
+    background-color: #fdf6ec;
+    color: #e6a23c;
+    border: 1px solid #faecd8;
+  }
+  
+  &.danger {
+    background-color: #fef0f0;
+    color: #f56c6c;
+    border: 1px solid #fde2e2;
+  }
+}
+
+/* 库存预警样式 */
+.stock-warning {
+  color: #f56c6c;
+}
+
+.stock-normal {
+  color: #67c23a;
+}
+
+/* 表单样式 */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 卡片样式 */
+.data-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  .data-value {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .data-title {
+    font-size: 14px;
+    color: #909399;
+  }
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .el-form-item {
+    margin-bottom: 18px;
+  }
+  
+  .page-container {
+    padding: 10px;
+  }
+}
